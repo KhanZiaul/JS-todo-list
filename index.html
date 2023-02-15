@@ -8,32 +8,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://kit.fontawesome.com/70a98cd510.js"crossorigin="anonymous"></script>
 </head>
 <body>
 
     <main>
-        <div class="mx-auto w-3/4 flex gap-9 mt-10">
+        <h2 class="text-red-900 text-5xl text-center mx-auto w-3/4 mt-10">TO-DO LISTS</h2>
+        <div class="flex items-center justify-center gap-9 mt-10">
 
             <input type="text" id="textarea" class="border-2 border-black block rounded-xl bg-green-600 text-white">
 
-            <button class="bg-sky-600 text-white block px-5 py-3 rounded-xl hover:bg-sky-900">Add</button>
+            <button id="add" class="bg-sky-600 text-white block px-8 py-3 rounded-xl hover:bg-sky-900">Add</button>
         </div>
 
-        <div class="mx-auto w-3/4 mt-10">
-            <table class="border-separate border-spacing-x-32">
+        <div class="mt-10 w-3/4 mx-auto">
+
+            <table class= "border-separate border-spacing-x-28 ">
+
                 <thead>
                     <tr>
                         <th>Serial</th>
                         <th>Descriptions</th>
                         <th>Add/Remove</th>
+                        <th>Check-Lists</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <!-- <td>onetwothree</td>
-                        <td>onetwothree</td>
-                        <td>onetwothree</td> -->
-                    </tr>
+
+                <tbody id="t-body">
+
                 </tbody>
             </table>
         </div>
